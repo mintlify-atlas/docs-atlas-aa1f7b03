@@ -1,0 +1,118 @@
+{
+  "projectType": "frontend",
+  "projectName": "Chets Nuts Foods",
+  "projectDescription": "React frontend for managing delivery guides (guías de remisión) with role-based workflows for administrators, workers, and drivers.",
+  "theme": "mint",
+  "primaryColor": "#10b981",
+  "lightColor": "#34d399",
+  "darkColor": "#059669",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "architecture/overview",
+              "architecture/feature-based",
+              "architecture/routing"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/delivery-guides",
+              "features/employees",
+              "features/establishments",
+              "features/vehicles",
+              "features/tracking"
+            ]
+          },
+          {
+            "group": "User Roles",
+            "pages": [
+              "roles/administrator",
+              "roles/worker",
+              "roles/driver"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Components",
+        "groups": [
+          {
+            "group": "UI Components",
+            "pages": [
+              "components/layouts",
+              "components/tables",
+              "components/forms",
+              "components/maps"
+            ]
+          },
+          {
+            "group": "Feature Components",
+            "pages": [
+              "components/gre-components",
+              "components/employee-components",
+              "components/vehicle-components"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Services",
+            "pages": [
+              "api/gre-service",
+              "api/employee-service",
+              "api/establishment-service",
+              "api/vehicle-service",
+              "api/tracking-service"
+            ]
+          },
+          {
+            "group": "Hooks",
+            "pages": [
+              "api/hooks/use-gre",
+              "api/hooks/use-employee",
+              "api/hooks/use-auth"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Role-based access control (Administrator, Worker, Driver)",
+    "Delivery guide (GRE) management with CRUD operations",
+    "Employee and vehicle fleet management",
+    "Real-time tracking and monitoring",
+    "Multi-establishment support",
+    "Feature-based architecture for scalability"
+  ],
+  "publicApiSurface": [
+    "GreService.getGuiasRemision()",
+    "GreService.getDetallesGuiaRemision()",
+    "EmpleadoService (employee management)",
+    "EstablecimientoService (establishment management)",
+    "VehiculoService (vehicle management)",
+    "useGre() hook",
+    "useEmpleado() hook",
+    "useAuth() hook",
+    "MainLayout component",
+    "TableGre component",
+    "FormCreateGre component"
+  ]
+}
